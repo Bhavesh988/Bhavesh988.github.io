@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Algorithm Visualizer</title>
+    <link rel="icon" href="image/sort.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="js/main.js" defer></script>
+    <script src="js/object_sort.js"></script>
+</head>
+<body style="background: #c3edea;">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <a class="navbar-brand" style="color:aqua;" href="#">
+            <h4>Sorting Visualizer
+            <img src="image/sort.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            </h4>
+        </a>
+    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <input id="i1" type="button" value="Bubble Sort" onclick="sort(1)">
+        &nbsp;
+        <input  id="i2" type="button" value="Selection Sort" onclick="sort(2)">
+        &nbsp;
+        <input id="i3" type="button" value="Insertion Sort" onclick="sort(3)">
+        &nbsp;
+        <input id="i4" type="button" value="Quick Sort" onclick="sort(4)">
+        &nbsp;
+        &nbsp;&nbsp;
+        <h4 style="color: #e79c2a; font-family: monospace;">Generate Array</h4>&nbsp;&nbsp;&nbsp;
+        <input type="range" min="30" max="900" onchange="clic()" value="30" step="1" id="ran">
+    </nav>
+    <br>
+    <canvas id="myc" width="1000" height="600"></canvas>
+    <footer class="text-center footer-format">
+        <a href="https://github.com/Bhavesh988/Sorting_Visualizer">
+            <img class="im" src="image/GitHub-Mark-120px-plus.png" alt="Github logo" width="50" height="50">
+        </a>
+        <br>
+        <br>
+        <strong>Made by - <a href="https://github.com/Bhavesh988" target="_blank">Bhavesh Choudhari</a></strong>
+    </footer>
+</body>
+</html>
